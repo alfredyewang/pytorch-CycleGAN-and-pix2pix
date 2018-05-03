@@ -49,6 +49,7 @@ def diagnose_network(net, name='network'):
 
 def save_image(image_numpy, image_path):
     image_pil = Image.fromarray(image_numpy)
+    print(image_numpy.shape)
     image_pil.save(image_path)
 
 
